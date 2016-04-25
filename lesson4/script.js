@@ -48,12 +48,12 @@ console.log(checkSpam('New PSD template')); // false
 
 // Function slice string more than 20 simbols
 
-function checkSpam(str){
+function checkSpam(str) {
 
   if(str.length < 20){
     return str;
 
-  }else{
+  } else {
     return str.slice(0,20)+'...';
   }
 

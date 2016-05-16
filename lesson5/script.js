@@ -1,9 +1,16 @@
-/**
- * Created by lol on 4/25/16.
- */
-function sumTo(n){
-    if (n == 1) return 1;
-
-    return n + sumTo(n-1);
-
+//Searchifor the biggest number in object
+var tasksCompleted = {
+  'Anna': 29,
+  'Serg': 355,
+  'Elena': 1,
+  'Anton': 99
 };
+
+
+var salary = 0;
+for(var key in tasksCompleted){
+  if(tasksCompleted[key] > salary){
+    salary = tasksCompleted[key];
+  }
+}
+console.log(salary);

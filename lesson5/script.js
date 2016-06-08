@@ -85,3 +85,21 @@ addClass(obj, 'open');
 console.log(obj);
 addClass(obj, 'new');
 console.log(obj);
+
+
+// fucntion removing dashes from sentanse, first character of the word modifed to UpperCase, and all words concated
+function toCamelCase (str){
+  var camelDash = str.split('-');
+
+
+  for(var i = 0; i < camelDash.length; i++) {
+          var letters = camelDash[i].split('');
+          letters[0] = letters[0].toUpperCase();
+          camelDash[i] = letters.join('');
+     }
+
+  return camelDash.join('');
+}
+
+
+console.log(toCamelCase('background-color'));

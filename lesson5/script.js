@@ -61,3 +61,27 @@ for(var i = 0; ;i++){
 }
 
 console.log(count);
+
+// Function added class to object
+
+var obj = {
+  className: 'open menu'
+};
+
+
+function addClass(obj, cls){
+
+ var classes = obj.className.split(' ');
+
+  if(classes.indexOf(cls) === -1){
+    classes.push(cls);
+  }
+
+  obj.className = classes.join(' ');
+}
+
+
+addClass(obj, 'open');
+console.log(obj);
+addClass(obj, 'new');
+console.log(obj);

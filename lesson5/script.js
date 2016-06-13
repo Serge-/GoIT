@@ -134,3 +134,25 @@ people.sort(function(a,b){return a.age-b.age;});
 for(var i=0; i<people.length;i++){
   console.log(people[i].name);
 }
+
+
+// function check for the Palindrome
+
+function isPal(string){
+  var res = string.toLowerCase().replace(/ /g,'');
+  var rev = res.split('').reverse().join('');
+
+  if(res === rev){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
+
+console.log(isPal('Anna')); // true
+console.log(isPal('А роза упала на лапу Азора')); //true
+console.log(isPal('Вася')); //false
+console.log(isPal('12321')); //true
+console.log(isPal('123212')); //false

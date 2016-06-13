@@ -103,3 +103,14 @@ function toCamelCase (str){
 
 
 console.log(toCamelCase('background-color'));
+
+// Array cloned ans sorted, oroginal array not changed
+
+var arr = ['HTML', 'JavaScript', 'CSS'];
+
+var  arrSorted = arr.slice(0);
+
+arrSorted.sort();
+
+console.log( arrSorted ); // CSS, HTML, JavaScript
+console.log( arr ); // HTML, JavaScript, CSS

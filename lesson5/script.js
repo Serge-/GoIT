@@ -114,3 +114,10 @@ arrSorted.sort();
 
 console.log( arrSorted ); // CSS, HTML, JavaScript
 console.log( arr ); // HTML, JavaScript, CSS
+
+// random array sort
+var arr = [1, 2, 3, 4, 5];
+
+arr.sort(function() { return 0.5 - Math.random(); });
+
+console.log( arr ); 

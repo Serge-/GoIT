@@ -176,3 +176,26 @@ function unique(arr) {
 }
 
 console.log(unique(strings));
+
+
+// function searching for Anagrams in array, returned array without anagrams
+var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];
+
+var a = [];
+
+function anClean(arr) {
+    nextInput:
+    for(var i = 0; i<arr.length; i++){
+      var res = arr[i].toLowerCase().split('').reverse().join('');
+
+      for(var j = 0; j<a.length; j++){
+
+        if(a[j] === res)continue nextInput;
+      }
+        a.push(arr[i]);
+
+      }
+      return a;
+}
+
+console.log( anClean(arr) );

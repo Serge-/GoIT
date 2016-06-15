@@ -158,11 +158,11 @@ console.log(isPal('12321')); //true
 console.log(isPal('123212')); //false
 
 
-// function search for similar array items, returned array with only not repeated array items
+// function search for similar array items, returned array with unique array items
 var strings = ['кришна', 'кришна', 'харе', 'харе', 'харе', 'харе', 'кришна', 'кришна', '8-()' ];
 var a = [];
 
-  
+
 function unique(arr) {
     nextInput:
     for(var i = 0; i<arr.length; i++){

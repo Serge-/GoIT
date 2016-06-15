@@ -156,3 +156,23 @@ console.log(isPal('А роза упала на лапу Азора')); //true
 console.log(isPal('Вася')); //false
 console.log(isPal('12321')); //true
 console.log(isPal('123212')); //false
+
+
+// function search for similar array items, returned array with only not repeated array items
+var strings = ['кришна', 'кришна', 'харе', 'харе', 'харе', 'харе', 'кришна', 'кришна', '8-()' ];
+var a = [];
+
+  
+function unique(arr) {
+    nextInput:
+    for(var i = 0; i<arr.length; i++){
+      var res = arr[i];
+      for(var j = 0; j<a.length; j++){
+        if(a[j] === res)continue nextInput;
+      }
+        a.push(res);
+      }
+      return a;
+}
+
+console.log(unique(strings));

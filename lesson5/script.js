@@ -199,3 +199,25 @@ function anClean(arr) {
 }
 
 console.log( anClean(arr) );
+
+
+// function check array with numbers for missing number
+
+var num1 = [0,5,1,3,2,9,7,6,4];
+var num2 = [9,2,4,5,7,0,8,6,1];
+
+
+
+function getMissingElement(arr) {
+  arr.sort();
+  for(var i = 0; i<arr.length; i++){
+
+    if(i !== arr[i]){
+      return i;
+    }
+  }
+
+}
+
+console.log(getMissingElement(num1));
+console.log(getMissingElement(num2));

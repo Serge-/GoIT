@@ -19,7 +19,7 @@ console.log(a + ' : ' + salary);
 
 
 
-// multiplyNumeric function returned numbers multiplyed by 2
+// multiplyNumeric function returned numbers multiplied by 2
 
 var image = {
     width: 100,
@@ -87,7 +87,7 @@ addClass(obj, 'new');
 console.log(obj);
 
 
-// fucntion removing dashes from sentanse, first character of the word modifed to UpperCase, and all words concated
+// function removing dashes from sentence, first character of the word modified to UpperCase, and all words concated
 function toCamelCase (str){
   var camelDash = str.split('-');
 
@@ -104,7 +104,7 @@ function toCamelCase (str){
 
 console.log(toCamelCase('background-color'));
 
-// Array cloned ans sorted, oroginal array not changed
+// Array cloned ans sorted, original array not changed
 
 var arr = ['HTML', 'JavaScript', 'CSS'];
 
@@ -200,7 +200,28 @@ function anClean(arr) {
 
 console.log( anClean(arr) );
 
+// Second solution
+function anClear(arr) {
+    var obj = {};
 
+    for(var i = 0; i < arr.length; i++ ) {
+        var sorted = arr[i].toLowerCase().split('').sort().join('');
+
+        obj[sorted] = arr[i];
+    }
+
+    var result = [];
+
+    for (var key in obj) {
+        result.push(obj[key]);
+    }
+
+    return result;
+}
+
+var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];
+
+console.log(anClean(arr));
 // function check array with numbers for missing number
 
 var num1 = [0,5,1,3,2,9,7,6,4];

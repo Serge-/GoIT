@@ -1,3 +1,3 @@
 # GOIT
 
-Javascript files with implemented tasks
+Javascript tasks

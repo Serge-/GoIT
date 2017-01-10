@@ -4,7 +4,7 @@ function isNumeric(n){
 }
 
 
-// Summ (n)
+// Sum (n)
 function sumTo(n){
   if (n == 1) return 1;
 
